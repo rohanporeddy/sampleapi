@@ -1,0 +1,17 @@
+<html>
+    <head>
+        {% if title %}
+        <title>{{tile}} - sample api/title>
+        {% else %}
+        <tilte>Welcome to sample api</tilte>
+        {% endif %}
+    </head>
+    <body>
+        <div style = "display : flex; margin-left: 20px;">API : 
+            <a href = "/index" style = "margin-left: 20px; margin-right: 50px;">Index Page</a>
+            <a href = "/homepage">Home Page</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html> 

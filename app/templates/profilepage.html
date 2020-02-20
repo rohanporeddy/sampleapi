@@ -1,0 +1,8 @@
+{% extends "banner.html" %}
+
+{% block content %}
+<h3>list of users</h3>
+{% for post in posts%}
+<li>{{post.author.username}}</li>
+{% endfor %}
+{% endblock %}
